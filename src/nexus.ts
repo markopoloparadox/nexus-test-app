@@ -7,12 +7,12 @@ declare global {
   }
 }
 
-export async function initialize_nexus(): Promise<NexusSDK> {
+export async function initialize_nexus(): Promise<NexusSDK | string> {
   const provider = window.ethereum;
 
   if (provider == undefined) {
     console.error("MetaMask is not installed");
-    throw "Does not work"
+    return "Metamask is not installed :("
   } else {
     console.log("MetaMask provider initialized:", provider);
   }
