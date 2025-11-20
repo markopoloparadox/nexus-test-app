@@ -1,0 +1,22 @@
+{
+  "name": "daily-lucky-number",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "typescript": "~5.9.3",
+    "vite": "^7.2.4"
+  },
+  "dependencies": {
+    "@avail-project/nexus-core": "1.0.0-beta.38",
+    "@metamask/providers": "^22.1.1",
+    "@picocss/pico": "^2.1.1",
+    "vanjs-core": "^1.6.0",
+    "vanjs-ext": "^0.6.3"
+  }
+}
