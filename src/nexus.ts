@@ -31,7 +31,7 @@ export async function initialize_nexus(): Promise<NexusSDK> {
 }
 
 export async function pay_you_bastard(sdk: NexusSDK) {
-  const bridgeResult = await sdk.bridge(
+  await sdk.bridge(
     {
       token: 'USDC',
       amount: 10_000n,
